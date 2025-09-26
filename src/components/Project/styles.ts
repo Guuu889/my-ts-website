@@ -30,7 +30,13 @@ export const Container = styled.section`
         transform: translateY(-5px);
         background-color: var(--pink);
       }
-
+      
+      img {
+        width: 100%;   /* gambar mengikuti lebar container */
+        height: auto;  /* tinggi menyesuaikan proporsi asli */
+        display: block; /* hilangkan gap bawaan inline img */
+        object-fit: cover; /* opsional: crop jika aspect ratio beda */
+      }
       header{
         display: flex;
         align-items: center;
